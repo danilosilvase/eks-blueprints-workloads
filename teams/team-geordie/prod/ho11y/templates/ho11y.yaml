@@ -119,8 +119,8 @@ metadata:
     scrape: "true"
     service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
     service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
-    service.beta.kubernetes.io/aws-load-balancer-subnets: subnet-0695723c78bda3715,
-      subnet-00002f34f0f9336e0
+    service.beta.kubernetes.io/aws-load-balancer-subnets: subnet-0695723c78bda3715, subnet-00002f34f0f9336e0
+    service.beta.kubernetes.io/aws-load-balancer-type : external
     service.beta.kubernetes.io/aws-load-balancer-attributes: load_balancing.cross_zone.enabled=true
 spec:
   type: LoadBalancer
