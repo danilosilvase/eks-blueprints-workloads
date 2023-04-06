@@ -17,6 +17,7 @@ spec:
           alb.ingress.kubernetes.io/scheme: internet-facing
           alb.ingress.kubernetes.io/tags: Environment=dev,Team=ecsdemo-frontend
           alb.ingress.kubernetes.io/target-type: ip
+          alb.ingress.kubernetes.io/security-groups: sg-0e2b158e393c67308 
         className: alb
         hosts:
           - paths:

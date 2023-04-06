@@ -9,6 +9,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/security-groups: sg-0e2b158e393c67308 
     alb.ingress.kubernetes.io/tags: Environment=test,Project=cognito
     external-dns.alpha.kubernetes.io/hostname: {{ .Values.spec.ingress.host }} 
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
